@@ -11,11 +11,10 @@ document.head.appendChild(faviconLink);
 const currentPage = window.location.pathname;
 
 // Text content for the home page
-if (currentPage.includes("index.html")) {
+if (currentPage.endsWith("index.html") || currentPage === "/" || currentPage === "/bharatnag/") {
     const textContent = "All my research for my articles comes from AI chatbots. These bots can either be right or wrong. Thus, these articles can either inform us or highlight areas that need further questioning. It's a win-win either way.";
     document.getElementById("text").textContent = textContent;
 }
-
 // Text content for the projects page
 if (currentPage.includes("projects.html")) {
     const textContent = "Welcome to the Projects Page. Here you can find all the projects I've been working on.";
