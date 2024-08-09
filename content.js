@@ -11,7 +11,7 @@ document.head.appendChild(faviconLink);
 const currentPage = window.location.pathname;
 
 // Text content for the home page
-if (currentPage.endsWith("index.html") || currentPage === "/" || currentPage === "/bharatnag/") {
+if (currentPage.includes("index.html") || currentPage === "/") {
     const textContent = "All my research for my articles comes from AI chatbots. These bots can either be right or wrong. Thus, these articles can either inform us or highlight areas that need further questioning. It's a win-win either way.";
     document.getElementById("text").textContent = textContent;
 }
